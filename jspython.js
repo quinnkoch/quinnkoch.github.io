@@ -140,10 +140,6 @@ function setup() {
     background(255)
     textSize(40);
 
-    button = createButton("Play");
-    button.position(0,height);
-    button.mousePressed(play);
-
     mainCharacter = new Character(0, 200, 60)//create player
 
     backgroundImage = loadImage("./JSbackground.png")//import images
