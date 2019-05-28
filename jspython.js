@@ -105,6 +105,8 @@ class Character {
                 for(var j = 0;j<monsterArray.length;j++){
                     mainCharacter.x = 30;
                     mainCharacter.y = 200;
+                    mainCharacter.xSpeed = 0;
+                    mainCharacter.ySpeed = 0;
                     monsterArray[j].ySpeed = 0
                     monsterArray[j].xSpeed = random(4,10)
                     monsterArray[j].x = random(100,width)
@@ -131,9 +133,16 @@ class Character {
 }
 
 function setup() {
+
+
+
     createCanvas(722, 348);
     background(255)
     textSize(40);
+
+    button = createButton("Play");
+    button.position(0,height);
+    button.mousePressed(play);
 
     mainCharacter = new Character(0, 200, 60)//create player
 
@@ -151,6 +160,11 @@ function setup() {
         monsterArray.push(newMonster)
 
     }
+    noLoop()
+}
+
+function play(){
+    loop();
 }
 
 function draw() {
@@ -207,3 +221,4 @@ function keyPressed(){//create spacebar jumping
         mainCharacter.ySpeed -= 8.0
     }
 }
+
