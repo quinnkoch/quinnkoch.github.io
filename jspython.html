@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+    <head>
+        <title>CSS Website Layout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 50;
+            }
+
+            /* Style the header */
+            .header {
+                background-color: rebeccapurple;
+                padding: 3px;
+                text-align: center;
+            }
+
+            /* Style the top navigation bar */
+            .topnav {
+                overflow: hidden;
+                background-color: orangered;
+            }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /* Change color on hover */
+            .topnav a:hover {
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+<body>
+
+<div class="header">
+    <h1>Quinn Koch's Website</h1>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="jspython.html">Games</a>
+    <a href="#">Maps</a>
+    <a href="#">Cool stuff</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</div>
+
+</body>
+<p>This is my personal webpage so go away!</p>
+
+
+<h1>Game:</h1>
+<script src="jspython.js"></script>
+
+<button onclick="play()">Play</button>
+
+<p id="demo"></p>
+</html>
