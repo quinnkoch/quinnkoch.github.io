@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
     <title>QHK</title>
-    <html lang="en">
-    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -94,8 +91,8 @@
             .dropdown:hover .dropdown-content {
                 display: block;
         </style>
-    </head>
-<body>
+
+<head>
 
 <div class="header">
     <h1>Quinn Koch's Website</h1>
@@ -123,32 +120,10 @@
     <a href="maps.html">Proof that the Earth is flat</a>
 </div>
 
-</body>
-<head>
-    <meta charset="UTF-8">
 </head>
+
+<body>
+<script src="converter.js"></script>
 </body>
-<p>This is my personal webpage so go away!</p>
-
-
-    <button onclick="getLocation()">Get my location</button>
-
-    <p id="demo"></p>
-
-<script>
-    var x = document.getElementById("demo");
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-
-    function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude;
-    }
-</script>
 
 </html>
