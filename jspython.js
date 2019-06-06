@@ -145,7 +145,7 @@ function setup() {
     backgroundImage = loadImage("./JSbackground.png")//import images
     mainCharacterImage = loadImage("./JavascriptLogo.png")
     monsterImage = loadImage("./pythonlogo.png")
-    p5Image = loadImage("./P5.jslogo.png")
+    p5Image = loadImage("./P5.js logo.png")
 
     p5 = new Character(1000,300,50)//create health pack
     p5.isP5 = true

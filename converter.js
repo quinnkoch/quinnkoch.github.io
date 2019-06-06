@@ -42,8 +42,8 @@ function kmm() {
 
 function draw() {
     background(255);
-    text(miles,100,195);
-    text(wordm,100,208);
-    text(kilometers,100,345);
-    text(wordk,100,358);
+    text(miles,100,145);
+    text(wordm,100,158);
+    text(kilometers,100,295);
+    text(wordk,100,308);
 }

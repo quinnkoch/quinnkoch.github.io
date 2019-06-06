@@ -25,6 +25,7 @@
                 background-color: rebeccapurple;
                 padding: 3px;
                 text-align: center;
+                color: white;
             }
 
             /* Style the top navigation bar */
@@ -99,6 +100,7 @@
 
             <div class="header">
                 <h1>Quinn Koch's Website</h1>
+                <h2>Home</h2>
             </div>
 
             <div class="topnav">
@@ -111,6 +113,7 @@
                         <a href="jspython.html">JS vs. Python game</a>
                         <a href="nbody.html">N-Body Diagram</a>
                         <a href="bouncingballs.html">Bouncing Balls</a>
+                        <a href="mondrian.html">Mondrian Generator</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -119,39 +122,18 @@
                     </button>
                     <div class="dropdown-content">
                         <a href="coverter.html">Miles-Km coverter</a>
+                        <a href="location.html">Find My Coordinates</a>
                     </div>
                 </div>
-                <a href="maps.html">Proof that the Earth is flat</a>
+                <a href="maps.html">Proof that the Earth is Flat</a>
             </div>
 
-        </head>
-<head>
+
     <meta charset="UTF-8">
 </head>
 
 <body>
-<p>This is my personal webpage so go away!</p>
-
-
-    <button onclick="getLocation()">Get my location</button>
-
-    <p id="demo"></p>
-
-</body>
-<script>
-    var x = document.getElementById("demo");
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-
-    function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude;
-    }
-</script>
+<p>Welcome to my website</p>
+<body/>
 
 </html>
